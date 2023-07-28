@@ -1,34 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-	  <style>
-		  table,tr,th,td,caption{
-			  border :1px solid black;
-		  }
-		  </style>
-	  
-  </head>
-  <body>
-    <table>
-		 <caption><b>Nested Table 2</b></caption>
-		<tr>
-			<th>Column 1</th>
-			<th>Column 2</th>
-		</tr>
-		<tr>
-			<td>abc</td>
-			<td>def</td>
-		</tr>
-	</table>
-	  <table>
-		
-		<caption><b>Nested Table 3</b></caption>
-		  
-	    <tr>
-			<td>Nested Table</td>
-			<td>Demo Continued</td>
-		</tr>
-	  </table>
-	  
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+            border: 2px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table style="border: 2px solid black;">
+        <tr>
+            <td  class="a">
+                <table style="border: 2px solid black;">
+                <tr>
+                    <th class="a" colspan="2">Nested Table 2</th>
+                </tr>
+                <tr>
+                    <th class="a">Column 1</th>
+                    <th class="a">Column 2</th>
+                </tr>
+                <tr>
+                    <td class="a">abc</td>
+                    <td class="a">def</td>
+                </tr>
+            </table>
+        </td>
+
+            <td class="a">
+                <table style="border: 2px solid black;">
+                <tr>
+                    <th class="a">Nested Table 1</th>
+                </tr>
+                <tr>
+                    <td>
+                    <ul>
+                        <li class="a">List item 1</li>
+                        <li class="a">List item 2</li>
+                        <li class="a">List item 3</li>
+                    </ul>
+                    </td>
+                </tr>
+            </table></td>
+        </tr>
+
+        <tr><td class="a">
+            <table style="border: 2px solid black;">
+                <tr>
+                    <th class="a" colspan="2">Nested Table 3</th>
+                </tr>
+                <tr>
+                    <td class="a"><a href="#">Nested Table</a></td>
+                    <td class="a">Demo Continued</td>
+                </tr>
+            </table>
+            </td>
+
+            <td class="a">
+                <table style="border: 2px solid black;">
+                    <tr>
+                        <th class="a" colspan="1">Nested table 4</th>
+                    </tr>
+                    <tr>
+                        <td class="a" style="background-color:black ;color:white">HTML</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
 </html>
